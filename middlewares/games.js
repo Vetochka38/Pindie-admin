@@ -1,4 +1,4 @@
-const { readData } = require("../utils/data"); // Чтение и запись данных в JSON-файл
+const { readData, writeData } = require("../utils/data"); // Чтение и запись данных в JSON-файл
 
 const getAllGames = async (req, res, next) => {
     const games = await readData("./data/games.json");
